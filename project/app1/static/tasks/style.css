@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #007bff;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Filter Styles */
+#filter-status {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Task List Styles */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+#task-list li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+#task-list li strong {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+#task-list li p {
+    margin: 5px 0;
+}
+
+#task-list li .edit-task, #task-list li .delete-task {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+#task-list li .delete-task {
+    background: #dc3545;
+}
+
+#task-list li .edit-task:hover {
+    background: #0056b3;
+}
+
+#task-list li .delete-task:hover {
+    background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form, #task-list {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+
+    #task-list li {
+        padding: 15px;
+    }
+}
